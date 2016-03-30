@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "herokudb": {
+    "name": "herokudb",
+    "connector": "postgresql",
+    "host": "ec2-107-22-248-209.compute-1.amazonaws.com",
+    "port": 5432,
+    "database": "dfb3jof2verdns",
+    "password": "8ZQ76zcYp8wIW0OHZ7Im6q7K6p",
+    "user": "bztxeoomeobdau",
+    "ssl": true
+  }
+}
