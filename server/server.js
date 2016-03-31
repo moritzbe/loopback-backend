@@ -4,6 +4,7 @@ var boot = require('loopback-boot');
 var PassportConfigurator = 
   require('loopback-component-passport').PassportConfigurator;
 
+
 var app = module.exports = loopback();
 
 app.start = function() {
@@ -28,3 +29,15 @@ boot(app, __dirname, function(err) {
   if (require.main === module)
     app.start();
 });
+
+var User = app.models.User;
+  User.hasMany(app.models.metauser, { as: 'metausers', foreignKey: 'userId' });
+var ACL = app.models.ACL;
+  ACL.create({
+    accessType: ACL.ALL,
+    permission: ACL.ALLOW,
+    principalType: ACL.ROLE,
+    principalId: '$owner',
+    model: 'User',
+    property: '__get__times'
+  });

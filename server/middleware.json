@@ -31,18 +31,10 @@
     }
   },
   "session:before": {
-  "cookie-parser": { "params": "test secret" }
-  },
-  "session": {
-    "express-session": {
-      "params": {
-        "secret": "other test secret",
-        "saveUninitialized": true,
-        "resave": true
-      }
+    "cookie-parser": {
+      "params": "test secret"
     }
   },
-  "session": {},
   "auth": {},
   "parse": {},
   "routes": {

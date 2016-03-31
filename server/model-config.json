@@ -17,24 +17,14 @@
   "User": {
     "dataSource": "db"
   },
-
-
-
-
   "UserCredential": {
-  "dataSource": "db",
-  "public": true
+    "dataSource": "db",
+    "public": true
   },
   "UserIdentity": {
     "dataSource": "db",
     "public": true
   },
-
-
-
-
-
-
   "AccessToken": {
     "dataSource": "db",
     "public": false
@@ -51,7 +41,7 @@
     "dataSource": "db",
     "public": false
   },
-  "user": {
+  "metauser": {
     "dataSource": "herokudb",
     "public": true
   },
